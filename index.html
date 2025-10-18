@@ -3,26 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>リング・キューブ・パズル</title>
+  <title>トリプル・リング・キューブ (デモ)</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="container">
-    <h1>リング・キューブ・パズル</h1>
+    <h1>トリプル・リング・キューブ (デモ)</h1>
     
     <div id="status">
       <span id="moveCounter">手数: 0</span>
     </div>
 
-    <svg id="puzzleSvg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-      </svg>
+    <svg id="puzzleSvg" viewBox="0 0 500 450" xmlns="http://www.w3.org/2000/svg"></svg>
 
     <div id="controls">
-      <p>操作するリングを選択:</p>
-      <div id="ringSelectors">
-        <button data-ring="0" class="ring-selector active">内側</button>
-        <button data-ring="1" class="ring-selector">中間</button>
-        <button data-ring="2" class="ring-selector">外側</button>
+      <p>操作する軸を選択:</p>
+      <div id="axisSelectors">
+        <button data-axis="0" class="axis-selector active">X軸 (上)</button>
+        <button data-axis="1" class="axis-selector">Y軸 (左下)</button>
+        <button data-axis="2" class="axis-selector">Z軸 (右下)</button>
       </div>
 
       <div id="actionButtons">

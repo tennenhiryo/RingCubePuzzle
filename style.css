@@ -7,7 +7,7 @@ body {
 }
 
 #container {
-  max-width: 450px;
+  max-width: 500px;
   text-align: center;
 }
 
@@ -17,18 +17,19 @@ body {
 }
 
 #puzzleSvg {
-  width: 100%;
+  width: 90%;
   height: auto;
   border: 5px solid #333;
   background-color: #fff;
-  border-radius: 50%;
+  border-radius: 8px; /* 四角いコンテナにする */
 }
 
 /* SVGセグメントの共通スタイル */
 .segment {
   stroke: #333;
-  stroke-width: 1;
-  transition: fill 0.3s; /* 色の変化を滑らかに */
+  stroke-width: 2;
+  transition: fill 0.3s;
+  cursor: pointer;
 }
 
 /* 操作UI */
@@ -40,7 +41,7 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.ring-selector, #actionButtons button, #utilityButtons button {
+.axis-selector, #actionButtons button, #utilityButtons button {
   padding: 8px 15px;
   margin: 5px;
   font-size: 1em;
@@ -49,17 +50,10 @@ body {
   border-radius: 4px;
 }
 
-.ring-selector.active {
+.axis-selector.active {
   background-color: #4CAF50;
   color: white;
   border-color: #4CAF50;
-}
-
-/* ハイライト（マウスオーバー時） */
-.segment:hover {
-  stroke-width: 3;
-  stroke: yellow;
-  cursor: pointer;
 }
 
 #message {
