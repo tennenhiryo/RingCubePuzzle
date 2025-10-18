@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>リング・キューブ・パズル</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <h1>リング・キューブ・パズル</h1>
+    
+    <div id="status">
+      <span id="moveCounter">手数: 0</span>
+    </div>
+
+    <svg id="puzzleSvg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+      </svg>
+
+    <div id="controls">
+      <p>操作するリングを選択:</p>
+      <div id="ringSelectors">
+        <button data-ring="0" class="ring-selector active">内側</button>
+        <button data-ring="1" class="ring-selector">中間</button>
+        <button data-ring="2" class="ring-selector">外側</button>
+      </div>
+
+      <div id="actionButtons">
+        <button id="rotateCW">時計回り (▶️)</button>
+        <button id="rotateCCW">反時計回り (◀️)</button>
+      </div>
+      
+      <div id="utilityButtons">
+        <button id="shuffleButton">シャッフル</button>
+        <button id="undoButton">やり直す (Undo)</button>
+        <button id="solveButton">揃える (Solve)</button>
+      </div>
+    </div>
+    
+    <p id="message"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
